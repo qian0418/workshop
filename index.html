@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Model Viewer -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
 </head>
 <body>
 
@@ -12,20 +15,34 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#model">3D Model</a></li> <!-- Added 3D Model link -->
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Home Section -->
     <section id="home">
-        <h1>Hey, It's Qian!</h1>
-        <p>Welcome!</p>
+        <h1>Welcome to Our Simple Website</h1>
+        <p>This is a basic HTML template for your website. Feel free to customize it!</p>
     </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About Us</h2>
         <p>Here you can add information about your website or business.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="your-image-url.jpg" alt="Description of Image" style="width:100%;max-width:600px;">
+    </section>
+
+    <!-- 3D Model Section --> <!-- New section for the 3D model -->
+    <section id="model">
+        <h2>3D Model</h2>
+        <model-viewer src="your-model-url.glb" alt="A 3D model of something" auto-rotate camera-controls ar ios-src="your-model-url.usdz" style="width: 100%; height: 500px;"></model-viewer>
     </section>
 
     <!-- Contact Form -->
@@ -44,5 +61,4 @@
 
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
 
